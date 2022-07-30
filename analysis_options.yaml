@@ -1,0 +1,38 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  errors:
+    todo: ignore
+    invalid_assignment: warning
+    missing_return: error
+    dead_code: info
+    use_build_context_synchronously: warning
+  strong-mode:
+    implicit-casts: false
+
+linter:
+  rules:
+    always_put_required_named_parameters_first: false
+    annotate_overrides: true
+    avoid_classes_with_only_static_members: false
+    avoid_relative_lib_imports: true
+    avoid_void_async: true
+    await_only_futures: true
+    camel_case_types: true
+    cancel_subscriptions: true
+    close_sinks: true
+    comment_references: true
+    constant_identifier_names: true
+    control_flow_in_finally: true
+    empty_statements: true
+    ignore_for_file: true
+    lowercase_with_underscores: true
+    prefer_single_quotes: true
+    sort_constructors_first: false
+    unnecessary_const: true
+    unnecessary_this: false
+    use_build_context_synchronously: true
+    prefer_function_declarations_over_variables: false
+    avoid_function_literals_in_foreach_calls: false
+    overridden_fields: false
+    no_logic_in_create_state: false
