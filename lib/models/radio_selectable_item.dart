@@ -1,5 +1,3 @@
-class RadioSelectableItem {
-  RadioSelectableItem({required this.id, required this.name});
-  int id;
-  String name;
+mixin RadioSelectableItem {
+  String get title;
 }

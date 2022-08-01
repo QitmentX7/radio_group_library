@@ -12,8 +12,9 @@
 - Добавить возможность горизонтального расположения елементов списка.
 
 **Как взаимодействовать:**
-- Добавьте RadioGroupForm внутрь Form.
-- Передайте ему список элементов в формате: RadioSelectableItem(int id, String name).
+- Добавьте виджет RadioGroupForm внутрь Form.
+- Создайте модель с использованием Mixin RadioSelectableItem(String title). 
+- Передайте данные на основании модели в виджет.
 - Присвойте Form ключ _formKey
 - Проверка происходит при вызове метода formKey.currentState.validate().
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../models/exm_radio_selectable_item.dart';
 import '../widgets/radio_group_form.dart';
 import '../models/radio_selectable_item.dart';
 
@@ -20,9 +21,9 @@ class _ExamplePageState extends State<ExamplePage> {
   @override
   initState() {
     super.initState();
-    values = <RadioSelectableItem>[
-      RadioSelectableItem(id: 1, name: 'Man'),
-      RadioSelectableItem(id: 2, name: 'Woman'),
+    values = <ExmRadioSelectableItem>[
+      ExmRadioSelectableItem(id: 1, title: 'Man'),
+      ExmRadioSelectableItem(id: 2, title: 'Woman'),
     ];
   }
 
@@ -77,9 +78,9 @@ class _ExamplePageState extends State<ExamplePage> {
                     ),
                     onPressed: () {
                       if (_formKey1.currentState!.validate()) {
-                        if (selected?.name != null) {
+                        if (selected?.title != null) {
                           _msgTextVal.text =
-                              'Your selected ${selected!.name} gender. Is it correct?';
+                              'Your selected ${selected!.title} gender. Is it correct?';
                         }
                       }
                     },

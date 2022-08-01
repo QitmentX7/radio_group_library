@@ -15,6 +15,7 @@ class RadioGroupForm extends StatefulWidget {
       required this.onSelectedCallback,
       this.errorMessage = 'Please choose one option'})
       : super(key: key);
+
   @override
   State<RadioGroupForm> createState() => _RadioGroupFormState();
 }
@@ -38,7 +39,7 @@ class _RadioGroupFormState extends State<RadioGroupForm> {
                         value: value,
                         groupValue: selectedValue,
                         title: Text(
-                          value.name,
+                          value.title,
                           style: const TextStyle(fontSize: 18),
                         ),
                         onChanged: (value) {
