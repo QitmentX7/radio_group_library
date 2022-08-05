@@ -14,6 +14,7 @@ The main task is to simplify the validation of RadioListTile.
 - Add other options for customizing conditions.
 - Add more widget interface customization options: font size, element color and padding between them.
 - Add the ability to horizontally arrange list items.
+- Fix some visual bags
 
 **How it works:**
 - Add a RadioGroupForm widget inside the Form.
@@ -21,30 +22,12 @@ The main task is to simplify the validation of RadioListTile.
 - Pass data based on the model to the widget.
 - Set the Form the key _formKey
 - Validation occurs when the _formKey.currentState.validate() method is called.
-
 *Use & enjoy!* :)
 
 
 
+https://user-images.githubusercontent.com/18053215/183044054-dac128c4-5b5e-400f-a393-f9633e0bd424.mp4
 
-## Radio_group_library
 
-**Radio_group_library** - это библиотека для реализации RadioList внутри Form. Главная задача упростить валидацию RadioListTile.  
-Функционал на данным момент реализации: 
-- Проверка возможна на предмет выбрал ли пользователь один из radio-переключателей.
-- Расположение элементов списка доступно в вертикальном варианте.
 
-**Что планируться в следующей версии?**
-- Сделать проверку на несколько radio-переключателей,
-- Добавить другие возможности кастомизации условий.
-- Добавить больше возможностей кастомизации интерфейса виджета: размер шрифта, цвет элементов и отступы между ними.
-- Добавить возможность горизонтального расположения елементов списка.
 
-**Как взаимодействовать:**
-- Добавьте виджет RadioGroupForm внутрь Form.
-- Создайте модель с использованием Mixin RadioSelectableItem(String title). 
-- Передайте данные на основании модели в виджет.
-- Присвойте Form ключ _formKey
-- Проверка происходит при вызове метода formKey.currentState.validate().
-
-*Use & enjoy!* :)
